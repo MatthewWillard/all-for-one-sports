@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Section } from "../../components/Utils/Utils";
-
-
+import NFL from './nfl.jpg';
+import FF from './ff.png';
 
 export default class HomePage extends Component {
   static defaultProps = {
@@ -15,15 +14,15 @@ export default class HomePage extends Component {
   render() {
    
     return (
-      <div className="team_selector">
-        <form>
-          <label htmlFor="teamName">Select a team:    </label>
-          <select id="teamName" name="country">
-            <option value="None">Select one...</option>
-            
-          </select>
-        </form>
-      </div>
+      <span className="news_selector">
+        <p>Get your latest NFL and Fantasy Football News!</p>
+        <a href="/nflnews">
+<img border="0" alt="NFLNews" src={NFL} width="500" height="500"></img>
+      </a>
+      <a href="/nflnews">
+<img border="0" alt="fantasyFootball" src={FF} width="500" height="500"></img>
+      </a>
+      </span>
     );      
   }
 }

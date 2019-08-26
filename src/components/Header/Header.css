@@ -1,8 +1,10 @@
 .Header {
-  height: 50px;
   display: flex;
-  align-items: normal;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  padding-left: 15px;
+  position: relative;
 }
 
 .Header h1 {
@@ -14,24 +16,26 @@
 }
 
 .Header a {
-  color: #444;
+  color: white;
+  align-content: center;
 }
 
 .Header__not-logged-in {
   display: flex;
   flex-direction: column;
+  padding-left: 25px;
 }
 
-.Header__not-logged-in .Hyph {
+ .Header__not-logged-in .Hyph {
   display: none;
-}
+} 
 
 @media screen and (min-width: 450px) {
   .Header {
     align-items: baseline;
   }
   .Header h1 {
-    font-size: 24pt;
+    font-size: 30pt;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 

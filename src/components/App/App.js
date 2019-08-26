@@ -6,7 +6,7 @@ import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
 import LoginPage from '../../routes/LoginPage/LoginPage'
 import RegistrationPage from '../../routes/RegistrationPage/RegistrationPage'
 import NotFoundPage from '../../routes/NotFoundPage/NotFoundPage'
-import TeamPage from '../../routes/TeamPage/TeamPage'
+import NFLNews from '../../routes/NFLNewsPage/NFLNews'
 import Home from '../../routes/Home/HomePage'
 import './App.css'
 
@@ -20,7 +20,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className='App'>
+      <div className='mainApp'>
         <header className='App__header'>
           <Header />
         </header>
@@ -41,8 +41,8 @@ class App extends Component {
               component={RegistrationPage}
             />
             <Route
-              path={'/Team/:teamId'}
-              component={TeamPage}
+              path={'/NFLNews/'}
+              component={NFLNews}
             />
             <Route
               component={NotFoundPage}
