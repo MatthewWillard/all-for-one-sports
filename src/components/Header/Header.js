@@ -22,7 +22,7 @@ export default class Header extends Component {
     )
   }
 
-  renderLoginLink() {
+  renderLoginLink() {  
     return (
       <div className='Header__not-logged-in'>
         <Link
