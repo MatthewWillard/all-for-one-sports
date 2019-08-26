@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import NFL from './nfl.jpg';
-import FF from './ff.png';
+import NHL from './nhl.jpg';
+import ESPN from './espn.jpg';
+import fs from './fs.png';
 
 export default class HomePage extends Component {
   static defaultProps = {
@@ -15,12 +17,18 @@ export default class HomePage extends Component {
    
     return (
       <span className="news_selector">
-        <p>Get your latest NFL and Fantasy Football News!</p>
+        <p>Click on Logos to get the Latest News</p>
         <a href="/nflnews">
-<img border="0" alt="NFLNews" src={NFL} width="500" height="500"></img>
+<img border="0" alt="NFLNews" src={NFL} width="250" height="250"></img>
       </a>
-      <a href="/nflnews">
-<img border="0" alt="fantasyFootball" src={FF} width="500" height="500"></img>
+      <a href="/nhlnews">
+<img border="0" alt="nhl" src={NHL} width="250" height="250"></img>
+      </a>
+      <a href="/espn">
+<img border="0" alt="espn" src={ESPN} width="250" height="250"></img>
+      </a>
+      <a href="/foxsports">
+<img border="0" alt="foxsports" src={fs} width="250" height="250"></img>
       </a>
       </span>
     );      

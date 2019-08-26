@@ -7,8 +7,12 @@ import LoginPage from '../../routes/LoginPage/LoginPage'
 import RegistrationPage from '../../routes/RegistrationPage/RegistrationPage'
 import NotFoundPage from '../../routes/NotFoundPage/NotFoundPage'
 import NFLNews from '../../routes/NFLNewsPage/NFLNews'
+import NHLNews from '../../routes/NHLNews/NHLNews'
+import ESPN from '../../routes/ESPN/ESPNDisplay'
+import FoxSports from '../../routes/FoxSports/FoxSports'
 import Home from '../../routes/Home/HomePage'
 import './App.css'
+
 
 class App extends Component {
   state = { hasError: false }
@@ -41,8 +45,20 @@ class App extends Component {
               component={RegistrationPage}
             />
             <Route
-              path={'/NFLNews/'}
+              path={'/NFLNews'}
               component={NFLNews}
+            />
+            <Route
+              path={'/NHLNews'}
+              component={NHLNews}
+            />
+            <Route
+              path={'/ESPN'}
+              component={ESPN}
+            />
+            <Route
+              path={'/FoxSports'}
+              component={FoxSports}
             />
             <Route
               component={NotFoundPage}

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './Display.css';
+import '../../Display.css'
 
-class Display extends Component {
+class ESPNDisplay extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,7 +16,7 @@ class Display extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps !== this.props) {
-      this.setState({ url: `https://newsapi.org/v2/top-headlines?sources=nfl-news&apiKey=${process.env.REACT_APP_API_KEY}` });
+      this.setState({ url: `https://newsapi.org/v2/top-headlines?sources=espn&apiKey=${process.env.REACT_APP_API_KEY}` });
 
       this.getArticles(nextProps.default);
     }
@@ -34,7 +34,7 @@ class Display extends Component {
   getArticles(url) {
     const apiKey = process.env.REACT_APP_API_KEY;
     axios
-      .get(`https://newsapi.org/v2/top-headlines?sources=nfl-news&apiKey=${apiKey}`)
+      .get(`https://newsapi.org/v2/top-headlines?sources=espn&apiKey=${apiKey}`)
       .then(res => {
         const articles = res.data.articles;
         console.log(articles);
@@ -76,4 +76,4 @@ class Display extends Component {
   }
 }
 
-export default Display;
+export default ESPNDisplay;

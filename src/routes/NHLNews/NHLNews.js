@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import NFLDisplay from './NFLDisplay'
+import NHLDisplay from './NHLDisplay'
 
-class NFLnews extends Component {
+class NHLnews extends Component {
   render() {
     return (
       <div className="app">
-        <NFLDisplay />
+        <NHLDisplay />
       </div>
     );
   }
 } 
 
-export default NFLnews;
+export default NHLnews;
