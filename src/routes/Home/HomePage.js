@@ -27,9 +27,6 @@ export default class HomePage extends Component {
       <a href="/espn">
 <img border="0" alt="espn" src={ESPN} width="250" height="250"></img>
       </a>
-      <a href="/foxsports">
-<img border="0" alt="foxsports" src={fs} width="250" height="250"></img>
-      </a>
       </span>
     );      
   }

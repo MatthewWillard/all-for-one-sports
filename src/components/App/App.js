@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Header from '../Header/Header'
-//import PrivateRoute from '../Utils/PrivateRoute'
+import PrivateRoute from '../Utils/PrivateRoute'
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
 import LoginPage from '../../routes/LoginPage/LoginPage'
 import RegistrationPage from '../../routes/RegistrationPage/RegistrationPage'
@@ -9,7 +9,6 @@ import NotFoundPage from '../../routes/NotFoundPage/NotFoundPage'
 import NFLNews from '../../routes/NFLNewsPage/NFLNews'
 import NHLNews from '../../routes/NHLNews/NHLNews'
 import ESPN from '../../routes/ESPN/ESPNDisplay'
-import FoxSports from '../../routes/FoxSports/FoxSports'
 import Home from '../../routes/Home/HomePage'
 import './App.css'
 
@@ -44,21 +43,17 @@ class App extends Component {
               path={'/register'}
               component={RegistrationPage}
             />
-            <Route
+            <PrivateRoute
               path={'/NFLNews'}
               component={NFLNews}
             />
-            <Route
+            <PrivateRoute
               path={'/NHLNews'}
               component={NHLNews}
             />
-            <Route
+            <PrivateRoute
               path={'/ESPN'}
               component={ESPN}
-            />
-            <Route
-              path={'/FoxSports'}
-              component={FoxSports}
             />
             <Route
               component={NotFoundPage}
