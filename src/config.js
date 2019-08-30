@@ -1,4 +1,4 @@
 export default {
-  API_ENDPOINT: 'https://git.heroku.com/damp-savannah-81600.git',
+  API_ENDPOINT: 'https://damp-savannah-81600.herokuapp.com/',
   TOKEN_KEY: 'all-for-one-sports-api-auth-token',
 }

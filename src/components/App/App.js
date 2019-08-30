@@ -43,15 +43,15 @@ class App extends Component {
               path={'/register'}
               component={RegistrationPage}
             />
-            <PrivateRoute
+            <Route
               path={'/NFLNews'}
               component={NFLNews}
             />
-            <PrivateRoute
+            <Route
               path={'/NHLNews'}
               component={NHLNews}
             />
-            <PrivateRoute
+            <Route
               path={'/ESPN'}
               component={ESPN}
             />
