@@ -1,3 +1,4 @@
+
 .cardsContainer {
 	display: flex;
 	flex-direction: row;
@@ -6,10 +7,36 @@
 	flex-wrap: wrap;
 	width: 95%;
 	margin: 0 auto;
+	background: white;
 }
 
 .cardsContainer {
 	flex: 1;
+}
+
+.RegistrationPage {
+	width: auto;
+	background: white;
+	border: 5px;
+	margin-right: 20px;
+}
+
+.buttonSubmit { 
+  background-color: rgb(82, 83, 82);
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.LoginPage {
+	width: auto;
+	background: white;
+	border: 5px;
+	margin-right: 20px;
 }
 
 .card:nth-child(odd) {
@@ -54,6 +81,8 @@
 	max-width: 300px;
 	width: 100%;
 }
+
+
 
 @media screen and (max-width: 1200px) {
 	.cardsContainer {

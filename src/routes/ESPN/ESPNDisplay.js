@@ -59,9 +59,6 @@ class ESPNDisplay extends Component {
                 </h3>
                 <p>{news.description}</p>
                 <div className="author">
-                  <p>
-                    By <i>{news.author ? news.author : this.props.default}</i>
-                  </p>
                   <p>{this.formatDate(news.publishedAt)}</p>
                 </div>
               </div>
