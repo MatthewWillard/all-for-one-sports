@@ -33,7 +33,7 @@ All For One Sports is a full-stack website.
   <li>Heroku</li>
   <li>superTest</li>
   <li>jsonwebtoken<li>
-  </ul>
+</ul>
 
 ## API Documentation
 API endpoints for the back end include:
