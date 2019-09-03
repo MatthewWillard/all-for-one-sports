@@ -5,6 +5,11 @@ https://all-for-one-sports.mwillard.now.sh/
 
 All For One Sports is a full-stack web app that lets users see all the latest sports news in one location.  Without having to search multiple websites the user cane get the latest news from ESPN or even the lastest NFL and NHL news from around the web.  After creating an account and logging in the user can see the latest news from whichever source they click on. 
 
+##### User Test Login
++ <b>username</b> - TestName
++ <b>password</b> - Password0!
+
+
 ## Screenshots
 
 ![Landing page screen shot](https://github.com/MatthewWillard/all-for-one-sports/blob/master/Screenshots/HomePage.png)
