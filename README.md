@@ -1,11 +1,18 @@
 # All For One Sports - All your sports news in one location!
 
+
+https://all-for-one-sports.mwillard.now.sh/
+
 All For One Sports is a full-stack web app that lets users see all the latest sports news in one location.  Without having to search multiple websites the user cane get the latest news from ESPN or even the lastest NFL and NHL news from around the web.  After creating an account and logging in the user can see the latest news from whichever source they click on. 
 
-##Screenshots
+## Screenshots
+
 ![Landing page screen shot](https://github.com/MatthewWillard/all-for-one-sports/blob/master/Screenshots/HomePage.png)
+
 ![Login page screen shot](https://github.com/MatthewWillard/all-for-one-sports/blob/master/Screenshots/Login.png)
+
 ![Register page screen shot](https://github.com/MatthewWillard/all-for-one-sports/blob/master/Screenshots/Register.png)
+
 ![NFL news page screen shot](https://github.com/MatthewWillard/all-for-one-sports/blob/master/Screenshots/nflNews.png)
 
 
@@ -26,7 +33,7 @@ All For One Sports is a full-stack website.
   <li>Heroku</li>
   <li>superTest</li>
   <li>jsonwebtoken<li>
-</ul>
+  </ul>
 
 ## API Documentation
 API endpoints for the back end include:
