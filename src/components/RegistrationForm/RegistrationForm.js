@@ -35,6 +35,7 @@ export default class RegistrationForm extends Component {
   render() {
     const { error } = this.state
     return (
+      <div className='regForm'>
       <form
         className='RegistrationForm'
         onSubmit={this.handleSubmit}
@@ -90,6 +91,7 @@ export default class RegistrationForm extends Component {
           Register
         </Button>
       </form>
+      </div>
     )
   }
 }

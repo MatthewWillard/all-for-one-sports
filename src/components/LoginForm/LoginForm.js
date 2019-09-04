@@ -46,6 +46,7 @@ export default class LoginForm extends Component {
   render() {
     const { error } = this.state
     return (
+      <div className='logForm'>
       <form
         className='LoginForm'
         onSubmit={this.handleSubmitJwtAuth}
@@ -78,6 +79,7 @@ export default class LoginForm extends Component {
           Login
         </Button>
       </form>
+      </div>
     )
   }
 }

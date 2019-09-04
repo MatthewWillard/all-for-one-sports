@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Hyph } from '../Utils/Utils'
 import TokenService from '../../services/token-service'
 import './Header.css'
@@ -40,20 +39,20 @@ export default class Header extends Component {
 
   render() {
     return (
+      <div className="navBar">
       <nav className='Header'>
         <h1>
           <Link to='/'>
-            <FontAwesomeIcon icon="football-ball" />
             {' '}
             All For One Sports
             {' '}
-            <FontAwesomeIcon icon="football-ball" />
           </Link>
         </h1>
         {TokenService.hasAuthToken()
           ? this.renderLogoutLink()
           : this.renderLoginLink()}
       </nav>
+      </div>
     )
   }
 }

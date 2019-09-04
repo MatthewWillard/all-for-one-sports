@@ -14,18 +14,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.team_selector {
-  font-size: 20px;
-  margin-top: 150px;
-  text-align: center;
-}
-
-#teamName {
-  font-size: 20px;
-}
 
 h1, h2, h3, h4, h5, h6 {
   color: #222;
+}
+
+h2 {
+  text-align: center;
 }
 
 p {
@@ -69,3 +64,23 @@ div a img {
   display: flex;
 }
 
+@media screen and (max-width: 450px) {
+  .intro{
+    font-size: 35px;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+}
+
+@media screen and (max-width: 320px) {
+.intro{
+ font-size: 25px;
+}
+img {
+  height: 150px;
+  width: 150px;
+}
+}
